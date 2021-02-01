@@ -17,6 +17,7 @@ public class CrapPrevention extends JavaPlugin {
         CrapPrevention.instance = this;
 
         if (!setupConfig()) {
+            getLogger().severe("Configuration defaults resource missing, disabling plugin.");
             disable();
             return;
         }
