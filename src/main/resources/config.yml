@@ -1,0 +1,18 @@
+# Configure what happens when crap is detected
+crap:
+  # If this is true, it will delete the item when pickup is detected.
+  # Otherwise it will just lie on the ground.
+  delete: true
+
+# Configure the VIP GUI's
+# -----------------------
+# Each list item is the amount of rows followed by a corresponding permission node.
+# Higher row amounts take priority if a player inherits multiple permissions.
+# The max amount of rows possible is 6.
+vip:
+  # If the player has this node, their crap GUI will have 2 rows instead of 1 (default)...
+  - 2: "crap.vip.2"
+  - 3: "crap.vip.3"
+  - 4: "crap.vip.4"
+  - 5: "crap.vip.5"
+  - 6: "crap.vip.6"

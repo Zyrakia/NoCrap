@@ -1,0 +1,10 @@
+name: CrapPrevention
+description: Disable the pickup of certain items.
+main: me.zyrakia.crap.CrapPrevention
+version: "1.0"
+api-version: 1.16
+api: ["1.16"]
+commands:
+  crap:
+    description: Open the crap GUI.
+    usage: /<command>
