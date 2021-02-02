@@ -1,6 +1,6 @@
-name: CrapPrevention
+name: NoCrap
 description: Disable the pickup of certain items.
-main: me.zyrakia.crap.CrapPrevention
+main: me.zyrakia.crap.NoCrap
 version: "1.0"
 api-version: 1.16
 api: ["1.16"]

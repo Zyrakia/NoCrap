@@ -7,14 +7,14 @@ import org.bukkit.plugin.java.JavaPlugin;
 import de.leonhard.storage.Yaml;
 import me.zyrakia.crap.commands.Crap;
 
-public class CrapPrevention extends JavaPlugin {
+public class NoCrap extends JavaPlugin {
 
-    private static CrapPrevention instance;
+    private static NoCrap instance;
     private static Yaml config;
 
     @Override
     public void onEnable() {
-        CrapPrevention.instance = this;
+        NoCrap.instance = this;
 
         if (!setupConfig()) {
             getLogger().severe("Configuration defaults resource missing, disabling plugin.");
@@ -48,7 +48,7 @@ public class CrapPrevention extends JavaPlugin {
         getServer().getPluginManager().disablePlugin(this);
     }
 
-    public static CrapPrevention getInstance() {
+    public static NoCrap getInstance() {
         return instance;
     }
 
