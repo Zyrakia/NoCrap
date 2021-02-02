@@ -1,6 +1,7 @@
 package me.zyrakia.crap;
 
 import java.io.InputStream;
+import java.nio.file.Paths;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -37,7 +38,7 @@ public class NoCrap extends JavaPlugin {
             return false;
 
         config = new Yaml("config", getDataFolder().getPath(), configDefaults);
-        crapData = new Json
+        crapData = new Json("crap", Paths.get(getDataFolder().getPath(), "data").toString());
 
         return true;
     }
