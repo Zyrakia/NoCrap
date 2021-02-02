@@ -4,6 +4,7 @@ import java.io.InputStream;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
+import de.leonhard.storage.Json;
 import de.leonhard.storage.Yaml;
 import me.zyrakia.crap.commands.Crap;
 
@@ -11,6 +12,7 @@ public class NoCrap extends JavaPlugin {
 
     private static NoCrap instance;
     private static Yaml config;
+    private static Json crapData;
 
     @Override
     public void onEnable() {
@@ -35,6 +37,8 @@ public class NoCrap extends JavaPlugin {
             return false;
 
         config = new Yaml("config", getDataFolder().getPath(), configDefaults);
+        crapData = new Json
+
         return true;
     }
 
@@ -54,6 +58,10 @@ public class NoCrap extends JavaPlugin {
 
     public Yaml getConf() {
         return config;
+    }
+
+    public Json getCrapData() {
+        return crapData;
     }
 
 }
